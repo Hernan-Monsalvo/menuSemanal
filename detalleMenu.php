@@ -37,18 +37,24 @@
 
         </div>
 
-        <div class="botones detalle">
-            <a href="historial.php">Volver al historial</a>
-            <a href="listaCompra.php?id=<?php echo $row["ID"] ?>">Crear lista de compras!</a>
+        <div class="botones">
+            <a href="historial.php">Volver</a>
+            <div class="acciones">
+                <ul>
+                    <li><a href="listaCompra.php?id=<?php echo $row["ID"] ?>">Lista de compra</a></li>
+                    <li><a href="editar.php?id=<?php echo $row["ID"] ?>">Editar</a></li>
+            <li><a href="#!" onclick='if (window.confirm("Realmente quieres eliminar?")) { 
+  window.open("eliminar.php?id=<?php echo $row["ID"] ?>", "eliminando");}'>Eliminar</a></li>
+                </ul>
+                <a href="#!" class="dropUp">Acciones ↑</a>
+
+            </div>
         </div>
     <?php } ?>
     </div>
 
-    <footer id="footer">
 
-        H.Monsalvo 2020 © Todos los derechos reservados
 
-    </footer>
 
 </body>
 

@@ -1,275 +1,317 @@
-@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,400;0,700;1,400&family=Roboto:wght@400;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,400;0,700;1,400&family=Roboto:wght@400;700&display=swap");
 
-*{
-    padding: 0;
-    margin: 0;
+* {
+  padding: 0;
+  margin: 0;
 }
 
-#index .container{
-    background-color: white;
-    height: 100vh;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
+#index .container {
+  background-color: white;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
 }
 
-#index .container.nMenu{
-    background: linear-gradient(to bottom, white, lightsteelblue);
+#index .container.nMenu {
+  background: linear-gradient(to bottom, white, lightsteelblue);
 }
 
-#index .head{
-
-background-color: steelblue;
-padding-top: 10px;
-padding-bottom: 10px;
-position: fixed;
-top: 0;
-width: 100%;
-text-align: center;
-font-family: 'Roboto', sans-serif;
-
+#index .head {
+  background-color: steelblue;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  text-align: center;
+  font-family: "Roboto", sans-serif;
 }
 
-#index .container .botones.home{
-    flex-direction: column;
-    width: 80%;
-    justify-content: space-evenly;
-    align-items: center;
-    height: 100%;
-
+#index .container .botones.home {
+  flex-direction: column;
+  width: 80%;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 100%;
 }
 
-#index .container .botones.home a{
-
-    height: 200px;
-    width: 200px;
-    flex-basis: auto;
-    border-radius: 50%;
-    text-align: center;
-    box-shadow: 
-    12px 12px 16px 0 rgba(0, 0, 0, 0.25),
+#index .container .botones.home a {
+  height: 200px;
+  width: 200px;
+  flex-basis: auto;
+  border-radius: 50%;
+  text-align: center;
+  box-shadow: 12px 12px 16px 0 rgba(0, 0, 0, 0.25),
     -8px -8px 12px 0 rgba(255, 255, 255, 0.3);
-    background: linear-gradient(135deg, rgba(0,0,0,0.04), rgba(255,255,255,0.08));
-
+  background: linear-gradient(
+    135deg,
+    rgba(0, 0, 0, 0.04),
+    rgba(255, 255, 255, 0.08)
+  );
 }
-#index .container .botones a{
-    font-size: 2em;
-    text-decoration: none;
-    background-color: white;
-    /*flex-basis: 20%;*/
-    display: flex;
-    align-items: center;
-    padding: 5px;
-    border-radius: 10px;
-    box-shadow: 0 0 15px 0  grey;
-    margin-left: 10px;
-}
-
-#listaCompra .boton.volver a{
-    font-size: 2em;
-    text-decoration: none;
-    background-color: white;
-    /*flex-basis: 20%;*/
-    position: fixed;
-    bottom: 50px;
-    display: flex;
-    align-items: center;
-    padding: 5px;
-    border-radius: 10px;
-    box-shadow: 0 0 15px 0  grey;
-    margin-left: 10px;
-    font-family: 'Nunito', sans-serif;
+#index .container .botones a {
+  font-size: 2em;
+  text-decoration: none;
+  background-color: white;
+  /*flex-basis: 20%;*/
+  display: flex;
+  align-items: center;
+  padding: 5px;
+  border-radius: 10px;
+  box-shadow: 0 0 15px 0 grey;
+  margin-left: 10px;
 }
 
-
-#index .container.nMenu .botones{
-    flex-direction: row;
-    justify-content: flex-start;
-    margin: 10px;
+#index .container .botones button {
+  font-size: 2em;
+  text-decoration: none;
+  background-color: white;
+  /*flex-basis: 20%;*/
+  display: flex;
+  align-items: center;
+  padding: 5px;
+  border-radius: 10px;
+  box-shadow: 0 0 15px 0 grey;
+  margin-left: 10px;
 }
 
-#index .container.nMenu .botones.detalle{
-    flex-direction: row;
-    justify-content: space-around;
-    margin: 10px;
+#listaCompra .boton.volver a {
+  font-size: 2em;
+  text-decoration: none;
+  background-color: white;
+  /*flex-basis: 20%;*/
+  /*position: fixed;*/
+  bottom: 50px;
+  display: flex;
+  align-items: center;
+  padding: 5px;
+  border-radius: 10px;
+  box-shadow: 0 0 15px 0 grey;
+  margin-left: 10px;
+  font-family: "Nunito", sans-serif;
 }
 
-#index .container.nMenu .botones.detalle a{
-    height: 140px;
-    width: 140px;
-    text-align: center;
+#index .container.nMenu .botones {
+  flex-direction: row;
+  justify-content: flex-start;
+  margin: 10px;
 }
 
-#index .botones{
-    width: 100%;
-    display: flex;
-    justify-content: space-around;
-    border-radius: 5px;
-    font-family: 'Nunito', sans-serif;
-    
+#index .container.nMenu .botones.detalle {
+  flex-direction: row;
+  justify-content: space-around;
+  margin: 10px;
 }
 
-
-
-#index .titulo{
-    margin: 5px;
-    padding: 2px;
-    /*background-color: #fff;*/
-    border-radius: 5px;
-    text-align: center;
-    font-family: 'Nunito', sans-serif;
-
+#index .container.nMenu .botones.detalle a {
+  height: 100px;
+  width: 100px;
+  text-align: center;
 }
 
-#index .dia{
-    font-size: 1.4em;
-    margin: 20px 5px 0 10px;
-    padding: 2px;
-    border-radius: 5px;
-    text-align: left;
-    font-family: 'Roboto', sans-serif;
+/*------------------dropup--------------------*/
+#index .acciones ul {
+  position: absolute;
+  bottom: 0;
+  max-height: 0px;
+  overflow: hidden;
+  transition: all 1s;
+  background-color: transparent;
+}
+#index .acciones ul li {
+  margin-bottom: 2px;
+}
+#index .container .botones .acciones ul li a {
+  box-shadow: none;
+  border: 1px solid black;
+}
+
+#index .acciones:hover ul {
+  max-height: 180px;
+}
+
+#index .botones {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  border-radius: 5px;
+  font-family: "Nunito", sans-serif;
+}
+#listaCompra .boton {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  border-radius: 5px;
+  font-family: "Nunito", sans-serif;
+  position: fixed;
+  bottom: 15px;
+}
+
+#index .titulo {
+  margin: 5px;
+  padding: 2px;
+  /*background-color: #fff;*/
+  border-radius: 5px;
+  text-align: center;
+  font-family: "Nunito", sans-serif;
+}
+
+#index .dia {
+  font-size: 1.4em;
+  margin: 20px 5px 0 10px;
+  padding: 2px;
+  border-radius: 5px;
+  text-align: left;
+  font-family: "Roboto", sans-serif;
 }
 
 #index .container .inputs input,
-#index .container .inputs button{
-
-    height: 50px;
-    font-size: 1.2em;
-    font-family: 'Nunito', sans-serif;
-    font-weight: bold;
-    letter-spacing: 1px;
+#index .container .inputs button {
+  height: 50px;
+  font-size: 1.2em;
+  font-family: "Nunito", sans-serif;
+  font-weight: bold;
+  letter-spacing: 1px;
 }
 
-#index .container .inputs form{
+#index .container .inputs form {
+  display: flex;
+  flex-direction: column;
+  height: 300px;
+  justify-content: space-between;
+}
 
-    display: flex;
-    flex-direction: column;
-    height: 300px;
-    justify-content: space-between;
+#index .detalle {
+  overflow: auto;
+}
+
+#index .detalle.editar {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+#index .detalle.editar div{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: flex-end;
+  width: 90%;
 
 }
 
-
-
-
-#index .semana{
-    background-color: lightblue;
-    margin-bottom: 20px;
-    border: 1px solid #000;
+#index .detalle.editar select {
+  width: 70%;
 }
-
-#index .semana table{
-    width: 100%;   
-}
-
-#index .semana a{
-    text-decoration: none;
+#index .detalle.editar option{
+  font-size: 12px;
 }
 
 
+#index .semana {
+  background-color: lightblue;
+  margin-bottom: 20px;
+  border: 1px solid #000;
+}
+
+#index .semana table {
+  width: 100%;
+}
+
+#index .semana a {
+  text-decoration: none;
+}
 
 /*--------------------------------------*/
-#listaCompra .nav{
-
-display: flex;
-flex-direction: row;
-justify-content: center;
-align-items: center;
-
-
+#listaCompra .nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
 }
 
-#listaCompra .tituloLista{
-    margin-bottom: 20px;
-    padding-top: 10px;
+#listaCompra .tituloLista {
+  margin-bottom: 20px;
+  padding-top: 10px;
 }
 
-#listaCompra .tabContent{
-    padding: 5px;
-    box-sizing: border-box;
-
+#listaCompra .tabContent {
+  padding: 5px;
+  box-sizing: border-box;
 }
 
-#listaCompra .tabContent ol{
-    font-size: 1.5em;
-    font-family: 'Nunito', sans-serif;
-    margin: 20px 5px 0 10px;
+#listaCompra .tabContent ol {
+  font-size: 1.5em;
+  font-family: "Nunito", sans-serif;
+  margin: 20px 5px 0 10px;
 }
 
-#listaCompra .tabContent ol li{
-    margin-left: 25px;
+#listaCompra .tabContent ol li {
+  margin-left: 25px;
 }
 
-
-
-#listaCompra .nav .tab{
-
-    background-color: slategray;
-    color: white;
-    border: none;
-    outline: none;
-    cursor: pointer;
-    padding: 14px 16px;
-    font-size: 17px;
-    width: 33.3%;
-    height: 80px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-
-
-  }
-
-  #listaChino{
-      background-color: lightsteelblue;
-  }
-
-  #listaCarniceria{
-      background-color: lightsalmon;
-  }
-
-  #listaVerduleria{
-      background-color: lightgreen;
-  }
-
-
-  .tabContent{
-      height: calc(100vh - 80px);
-      display: none;
-      flex-direction: column;
-      justify-content: flex-start;
-      align-items: center;
-      
-  }
-
-  #listaCompra .lista{
-      display: flex;
-      flex-direction: column;
-      align-items: flex-start;
-      justify-content: space-around;
-      width: 100%;
-  }
-
-  #listaCompra .lista label{
-    display: inline;
-    font-size: 1.5em;
-    font-family: 'Nunito', sans-serif;
-    margin: 2px 5px 0 20px;
+#listaCompra .nav .tab {
+  background-color: slategray;
+  color: white;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  font-size: 17px;
+  width: 33.3%;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-
-#listaCompra .lista label input{
-    margin-right: 15px;
+#listaChino {
+  background-color: lightsteelblue;
 }
 
-#listaCompra .lista label input:checked{
-    margin-right: 15px;
-    text-decoration: line-through;
+#listaCarniceria {
+  background-color: lightsalmon;
 }
 
+#listaVerduleria {
+  background-color: lightgreen;
+}
+
+.tabContent {
+  height: calc(100vh - 80px);
+  display: none;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+#listaCompra .lista {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-around;
+  width: 100%;
+  padding-bottom: 80px;
+}
+
+#listaCompra .lista label {
+  display: inline;
+  font-size: 1.5em;
+  font-family: "Nunito", sans-serif;
+  margin: 2px 5px 0 20px;
+}
+
+#listaCompra .lista label input {
+  margin-right: 15px;
+}
+
+#listaCompra .lista label input:checked {
+  margin-right: 15px;
+  text-decoration: line-through;
+}
 
 /*
 .click {
@@ -285,45 +327,37 @@ align-items: center;
 }
 */
 
-
-
-  .activo{
-
-    display: flex;
-
-  }
-
-#triciclo{
-    position: fixed;
-    left: -250px;
-    animation: movimiento 2s cubic-bezier(0,.78,.78,.4) .3s forwards;
+.activo {
+  display: flex;
 }
 
-
-#triciclo img{
-    height: 400px;
+#triciclo {
+  position: fixed;
+  left: -250px;
+  animation: movimiento 2s cubic-bezier(0, 0.78, 0.78, 0.4) 0.3s forwards;
 }
 
-  /*----------------------*/
-  #footer{
-      background-color: steelblue;
-      height: 25px;
-      width: 100%;
-      position: fixed;
-      bottom: 0;
-      text-align: center;
-      padding-top: 5px;
+#triciclo img {
+  height: 400px;
+}
 
+/*----------------------*/
+#footer {
+  background-color: steelblue;
+  height: 25px;
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  text-align: center;
+  padding-top: 5px;
+}
+
+@keyframes movimiento {
+  from {
+    transform: translateX(650px);
   }
 
-
-
-  @keyframes movimiento{    
-    from{
-        transform: translateX(650px);
-    }
-    
-    to{
-        transform: translateX(0);
-    }
+  to {
+    transform: translateX(0);
+  }
 }

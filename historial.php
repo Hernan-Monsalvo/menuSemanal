@@ -52,7 +52,9 @@
 
 
 
-            <?php } ?>
+            <?php } 
+            mysqli_close($conn);
+            ?>
         </div>
 
         <div class="botones">
@@ -60,11 +62,7 @@
         </div>
     </div>
 
-    <footer id="footer">
 
-        H.Monsalvo 2020 © Todos los derechos reservados
-
-    </footer>
 
 </body>
 

@@ -83,13 +83,8 @@
 
 
     <div class="boton volver">
-        <a href="historial.php">Volver</a>
+        <a href="detalleMenu.php?id=<?php echo $id ?>">Volver</a>
     </div>
-    <footer id="footer">
-
-        H.Monsalvo 2020 © Todos los derechos reservados
-
-    </footer>
 
     <script src="js/tabs.js"></script>
     <script src="js/listaCompra.js"></script>

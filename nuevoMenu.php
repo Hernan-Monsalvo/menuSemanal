@@ -76,13 +76,6 @@
 
     </div>
 
-    <footer id="footer">
-
-        H.Monsalvo 2020 © Todos los derechos reservados
-
-    </footer>
-
-
     <script src="js/crear-menu.js"></script>
     <script src="js/password.js"></script>
 </body>
