@@ -45,7 +45,7 @@
 
     <div id="triciclo">
         <img src="css/transparent.png" alt="tintin">
-
+        
     </div>
 
 
@@ -87,7 +87,8 @@
     </div>
 
     <script src="js/tabs.js"></script>
-    <script src="js/listaCompra.js"></script>
+    <!-- <script src="js/listaCompra.js"></script> -->
+    <?php include 'js/CrearListaCompra.php'; ?>
 </body>
 
 </html>

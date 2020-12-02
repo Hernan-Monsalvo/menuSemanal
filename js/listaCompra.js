@@ -1,50 +1,53 @@
+//creo los 3 arrays
 var listaChino = [];
 var listaCarniceria = [];
 var listaVerduleria = [];
 
-
+//paso las Comidas(array que creo en listaCompra.php) por la funcion de lista
 for (let i = 0; i < 9; i++) {
     listaDeCompra(Comidas[i]);
 }
 
+//elimino los repetidos de las listas
 var listaChino2 = [...new Set(listaChino)];
 var listaCarniceria2 = [...new Set(listaCarniceria)];
 var listaVerduleria2 = [...new Set(listaVerduleria)];
 
+//ordeno alfabeticamente
 listaChino2.sort();
 listaCarniceria2.sort();
 listaVerduleria2.sort();
 
-
+//selecciono los 3 divs
 panelChino = document.querySelector("#listaChino .lista");
 panelCarniceria = document.querySelector("#listaCarniceria .lista");
 panelVerduleria = document.querySelector("#listaVerduleria .lista");
 
-
+//foreach para rellenar la lista del chino
 listaChino2.forEach(element => {
 
     //let li = document.createElement("li");
-    let li = document.createElement('input');
-    li.type = 'checkbox';
-    let txt = document.createTextNode(element);
-    let label = document.createElement('label');
+    let inp = document.createElement('input'); //creo un input
+    inp.type = 'checkbox'; //le pongo tipo
+    let txt = document.createTextNode(element); //creo nodo de texto(tomo string del array)
+    let label = document.createElement('label'); //creo label
 
-    label.appendChild(li);
-    label.appendChild(txt);
-    panelChino.appendChild(label);
+    label.appendChild(inp); //meto el input en el label
+    label.appendChild(txt); //le meto texto al label
+    panelChino.appendChild(label); //agrego label con todo adentro al div de la lista
 
 
 });
 
 listaCarniceria2.forEach(element => {
 
-    let li = document.createElement('input');
-    li.type = 'checkbox';
+    let inp = document.createElement('input');
+    inp.type = 'checkbox';
     let txt = document.createTextNode(element);
     let label = document.createElement('label');
 
 
-    label.appendChild(li);
+    label.appendChild(inp);
     label.appendChild(txt);
     panelCarniceria.appendChild(label);
 
@@ -52,12 +55,12 @@ listaCarniceria2.forEach(element => {
 
 listaVerduleria2.forEach(element => {
 
-    let li = document.createElement('input');
-    li.type = 'checkbox';
+    let inp = document.createElement('input');
+    inp.type = 'checkbox';
     let txt = document.createTextNode(element);
     let label = document.createElement('label');
 
-    label.appendChild(li);
+    label.appendChild(inp);
     label.appendChild(txt);
     panelVerduleria.appendChild(label);
 
@@ -163,7 +166,6 @@ function listaDeCompra(Comida) {
             listaChino.push("Aceite");
             break;
         case "Pastel de papa":
-            listaCarniceria.push("Bola de lomo, cuadrada o nalga");
             listaChino.push("Huevo");
             listaChino.push("Muzzarela");
             listaVerduleria.push("Cebolla");

@@ -36,26 +36,42 @@
                 <div class="dia"><strong>vie:</strong> <?php echo $row['viernes']; ?></div>
 
         </div>
-
+        <img src="https://img.icons8.com/color/48/000000/baby-yoda.png" id="yoda" />
         <div class="botones">
             <a href="historial.php">Volver</a>
             <div class="acciones">
                 <ul>
                     <li><a href="listaCompra.php?id=<?php echo $row["ID"] ?>">Lista de compra</a></li>
                     <li><a href="editar.php?id=<?php echo $row["ID"] ?>">Editar</a></li>
-            <li><a href="#!" onclick='if (window.confirm("Realmente quieres eliminar?")) { 
-  window.open("eliminar.php?id=<?php echo $row["ID"] ?>", "eliminando");}'>Eliminar</a></li>
+                    <li><a href="#!" onclick='eliminar()'>Eliminar</a></li>
                 </ul>
                 <a href="#!" class="dropUp">Acciones ↑</a>
 
             </div>
         </div>
-    <?php } ?>
+
     </div>
+    <script>
+        function eliminar() {
+            Swal.fire({
+                title: 'Realmente quieres eliminar?',
+                showDenyButton: true,
+                showCancelButton: false,
+                confirmButtonText: `Eliminar`,
+                denyButtonText: `No eliminar`,
+            }).then((result) => {
+                /* Read more about isConfirmed, isDenied below */
+                if (result.isConfirmed) {
+                    window.location.replace("eliminar.php?id=<?php echo $row["ID"] ?>", "eliminando");
+                } else if (result.isDenied) {
+                   // Swal.fire('No se ha eliminado', '', 'info')
+                }
+            });
+        }
+    </script>
+<?php } ?>
 
-
-
-
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
 </body>
 
 </html>

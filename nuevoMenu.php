@@ -71,12 +71,15 @@
         <div class="botones">
 
             <a href="index.php" class="volver">Volver</a>
+            <a href="gestorDeComidas.php" class="volver">Gestionar Comidas</a>
 
         </div>
 
     </div>
-
+    <?php include 'js/crear-menu.php'; ?>
+<!--
     <script src="js/crear-menu.js"></script>
+-->
     <script src="js/password.js"></script>
 </body>
 

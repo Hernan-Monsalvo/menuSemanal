@@ -177,6 +177,24 @@
   letter-spacing: 1px;
 }
 
+/*-modificar platos-*/
+
+#index .container .editarComida #listaCompra{
+  text-align: center;
+}
+
+#index .container .inputs #newIng {
+  display: flex;
+  justify-content: space-between;
+}
+
+#index .container .inputs #newIng input,
+#index .container .inputs #newIng button,
+#index .container .inputs #newIng select {
+  /*background-color: red;*/
+  width: 32%;
+}
+
 #index .container .inputs form {
   display: flex;
   flex-direction: column;
@@ -194,22 +212,20 @@
   align-items: flex-start;
 }
 
-#index .detalle.editar div{
+#index .detalle.editar div {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
   align-items: flex-end;
   width: 90%;
-
 }
 
 #index .detalle.editar select {
   width: 70%;
 }
-#index .detalle.editar option{
+#index .detalle.editar option {
   font-size: 12px;
 }
-
 
 #index .semana {
   background-color: lightblue;
@@ -281,7 +297,7 @@
 }
 
 .tabContent {
-  height: calc(100vh - 80px);
+  min-height: calc(100vh - 80px);
   display: none;
   flex-direction: column;
   justify-content: flex-start;
@@ -313,19 +329,18 @@
   text-decoration: line-through;
 }
 
-/*
-.click {
-  cursor: pointer;
-}
+/*---------Gestor de comidas----------------*/
 
-.color:focus-within .change {
-  color: red;
+#listaCompra .container.nMenu .lista table {
+  width: 100%;
+  font-size: 1.4em;
+  border-collapse: collapse;
 }
-
-.color:focus-within p {
-  outline: 0;
+#listaCompra .container.nMenu .lista td {
+  padding-bottom: 2px;
+  border: 1px solid grey;
+  text-align: center;
 }
-*/
 
 .activo {
   display: flex;
@@ -333,12 +348,20 @@
 
 #triciclo {
   position: fixed;
-  left: -250px;
+  left: -275px;
   animation: movimiento 2s cubic-bezier(0, 0.78, 0.78, 0.4) 0.3s forwards;
 }
 
 #triciclo img {
   height: 400px;
+}
+
+img#yoda {
+  height: 80px;
+  position: fixed;
+  left: -275px;
+  top: 100px;
+  animation: movimiento 2s cubic-bezier(0, 0.78, 0.78, 0.4) 0.3s forwards;
 }
 
 /*----------------------*/
