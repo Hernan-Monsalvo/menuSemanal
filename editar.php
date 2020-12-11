@@ -88,7 +88,7 @@
     </div>
 
 
-
+    <?php include 'js/editor.php'; ?>
     <script src="js/editar.js"></script>
 </body>
 
