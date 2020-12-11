@@ -50,7 +50,10 @@
                         </tr>
 
                     <?php } ?>
-
+                    <tr>
+                        <td>Agregar Nuevo Plato</td>
+                        <td><a href="nuevoPlato.php?Tabla=delivery"><img src="https://img.icons8.com/cute-clipart/64/000000/add-to-inbox.png" /></a></td>
+                    </tr>
 
                 </table>
 
@@ -83,7 +86,10 @@
                         </tr>
 
                     <?php } ?>
-
+                    <tr>
+                        <td>Agregar Nuevo Plato</td>
+                        <td><a href="nuevoPlato.php?Tabla=plato_carn"><img src="https://img.icons8.com/cute-clipart/64/000000/add-to-inbox.png" /></a></td>
+                    </tr>
 
                 </table>
 
@@ -111,30 +117,33 @@
 
                     <?php } ?>
 
-
+                    <tr>
+                        <td>Agregar Nuevo Plato</td>
+                        <td><a href="nuevoPlato.php?Tabla=plato_vegg"><img src="https://img.icons8.com/cute-clipart/64/000000/add-to-inbox.png" /></a></td>
+                    </tr>
                 </table>
 
             </div>
         </div>
 
         <script>
-        function eliminar(plato, tabla) {
-            Swal.fire({
-                title: 'Realmente quieres eliminar: '+plato +'?',
-                showDenyButton: true,
-                showCancelButton: false,
-                confirmButtonText: `Eliminar`,
-                denyButtonText: `No eliminar`,
-            }).then((result) => {
-                /* Read more about isConfirmed, isDenied below */
-                if (result.isConfirmed) {
-                    window.location.replace("eliminarComida.php?Plato="+plato+"&Tabla="+tabla, "eliminando");
-                } else if (result.isDenied) {
-                   // Swal.fire('No se ha eliminado', '', 'info')
-                }
-            });
-        }
-    </script>
+            function eliminar(plato, tabla) {
+                Swal.fire({
+                    title: 'Realmente quieres eliminar: ' + plato + '?',
+                    showDenyButton: true,
+                    showCancelButton: false,
+                    confirmButtonText: `Eliminar`,
+                    denyButtonText: `No eliminar`,
+                }).then((result) => {
+                    /* Read more about isConfirmed, isDenied below */
+                    if (result.isConfirmed) {
+                        window.location.replace("eliminarComida.php?Plato=" + plato + "&Tabla=" + tabla, "eliminando");
+                    } else if (result.isDenied) {
+                        // Swal.fire('No se ha eliminado', '', 'info')
+                    }
+                });
+            }
+        </script>
 
 
         <script src="js/tabs.js"></script>

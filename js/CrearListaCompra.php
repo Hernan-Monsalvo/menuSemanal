@@ -22,7 +22,7 @@
     //dos foreach anidados.
     ListaGeneral.forEach(element => {
         //cada lista de ingredientes se separa en un array.
-        let tmp = element.split("-")
+        let tmp = element.split("-");
 
         tmp.forEach(e => {
             //se recorre el array resultante y se agrega a ListaSeparada.
